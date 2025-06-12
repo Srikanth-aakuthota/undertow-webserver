@@ -74,10 +74,10 @@ public class UndertowHttpServer {
             new FileResourceManager(Paths.get(reactBuildPath).toFile(), 100))
             .addWelcomeFiles("index.html");
 
-        // Main handler: /api/todos handled by API, all other routes serve React index.html
+        // Main handler: /api handled by API, all other routes serve React index.html
         HttpHandler mainHandler = exchange -> {
             String path = exchange.getRequestPath();
-            if (path.startsWith("/api/todos")) {
+            if (path.startsWith("/api/")) {
                 apiHandler.handleRequest(exchange);
             } else {
                 // Always serve index.html for React Router (client-side routing)

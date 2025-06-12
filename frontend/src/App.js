@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Todos from './todos';
-import Calendar from './calendar';
-import Invitations from './invitations';
+import Todos from './todos/Todos';
+import Calendar from './calendar/Calendar';
+import Invitations from './invitations/Invitations';
 
 function Home() {
   return (
