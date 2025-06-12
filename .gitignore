@@ -1,4 +1,25 @@
 *.iml
 .idea/
 target/
+*.class
+*.jar
+*.war
+*.ear
+*.exe
+*.dll
+*.so
+*.o
+*.obj
+*.log
+*.tmp
+*.swp
+.DS_Store
+node_modules/
+frontend/build/
+# VSCode
+.vscode/
+# Mac
+__MACOSX/
+# Windows
+Thumbs.db
 
